@@ -98,7 +98,7 @@
           </p>
         </div>
         <button onclick="openModal('project1')" class="w-full bg-slate-800/80 hover:bg-sky-500 hover:text-slate-950 text-slate-200 border border-slate-700 font-mono text-xs font-semibold py-3 rounded-xl transition flex items-center justify-center gap-2">
-          <span>Launch Web App</span> &rarr;
+          <span>Live Demo</span> &rarr;
         </button>
       </div>
 
@@ -115,7 +115,7 @@
           </p>
         </div>
         <button onclick="openModal('project2')" class="w-full bg-slate-800/80 hover:bg-sky-500 hover:text-slate-950 text-slate-200 border border-slate-700 font-mono text-xs font-semibold py-3 rounded-xl transition flex items-center justify-center gap-2">
-          <span>Launch Web App</span> &rarr;
+          <span>Live Demo</span> &rarr;
         </button>
       </div>
 
@@ -132,24 +132,24 @@
           </p>
         </div>
         <button onclick="openModal('project3')" class="w-full bg-slate-800/80 hover:bg-sky-500 hover:text-slate-950 text-slate-200 border border-slate-700 font-mono text-xs font-semibold py-3 rounded-xl transition flex items-center justify-center gap-2">
-          <span>Launch Web App</span> &rarr;
+          <span>Live Demo</span> &rarr;
         </button>
       </div>
 
-      <!-- Project 4: Classic Minesweeper -->
+      <!-- Project 4: Aura Parfum E-Commerce -->
       <div class="glass-card rounded-2xl p-6 flex flex-col justify-between transition-all duration-300">
         <div>
           <div class="flex justify-between items-start mb-4">
-            <span class="text-3xl">💣</span>
-            <span class="font-mono text-xs px-2.5 py-1 rounded bg-slate-800 text-sky-400 border border-slate-700">Vanilla JS / Game Logic</span>
+            <span class="text-3xl">🧴</span>
+            <span class="font-mono text-xs px-2.5 py-1 rounded bg-slate-800 text-sky-400 border border-slate-700">Vanilla JS / E-Commerce</span>
           </div>
-          <h4 class="text-xl font-bold text-white mb-2">Minesweeper Game</h4>
+          <h4 class="text-xl font-bold text-white mb-2">Aura Parfum Store</h4>
           <p class="text-slate-400 text-sm leading-relaxed mb-6">
-            A fully featured Minesweeper web game with adjustable difficulties (Easy, Medium, Hard), zero-first-click safe mine placement, flag toggles, and timers.
+            A luxury fragrance e-commerce site with catalog filtering and search, a shopping bag, multi-method checkout, and order tracking with status updates.
           </p>
         </div>
         <button onclick="openModal('project4')" class="w-full bg-slate-800/80 hover:bg-sky-500 hover:text-slate-950 text-slate-200 border border-slate-700 font-mono text-xs font-semibold py-3 rounded-xl transition flex items-center justify-center gap-2">
-          <span>Launch Web App</span> &rarr;
+          <span>Live Demo</span> &rarr;
         </button>
       </div>
 
@@ -230,7 +230,1171 @@
 
       project3: `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Rest & Go</title><style>*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;}body{background-color:#f9f9f9;color:#333;line-height:1.6;}header{background:#ffffff;padding:20px 50px;display:flex;justify-space:between;align-items:center;box-shadow:0 2px 5px rgba(0,0,0,0.05);position:sticky;top:0;z-index:1000;}.logo{font-size:24px;font-weight:bold;color:#0066cc;cursor:pointer;margin-right:30px;}nav ul{display:flex;list-style:none;gap:20px;}nav ul li a{text-decoration:none;color:#555;font-weight:600;transition:color 0.3s;cursor:pointer;}nav ul li a:hover,nav ul li a.active{color:#0066cc;}.menu-toggle{display:none;flex-direction:column;justify-space:between;width:28px;height:21px;cursor:pointer;background:transparent;border:none;z-index:1001;}.menu-toggle span{display:block;width:100%;height:3px;background-color:#333;border-radius:3px;transition:all 0.3s ease;}.page-section{display:none;}.page-section.active-page{display:block;}.hero{background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;height:420px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:white;padding:0 20px;}.hero h1{font-size:40px;margin-bottom:20px;}.search-container{position:relative;max-width:700px;width:100%;}.search-widget{background:white;padding:15px;border-radius:8px;display:flex;gap:10px;box-shadow:0 4px 10px rgba(0,0,0,0.2);width:100%;}.search-widget input{flex:1;padding:10px;border:1px solid #ddd;border-radius:4px;outline:none;}.search-widget button{background:#0066cc;color:white;border:none;padding:10px 20px;font-weight:bold;border-radius:4px;cursor:pointer;transition:background 0.3s;}.search-widget button:hover{background:#004fb3;}.recommendations-box{position:absolute;top:100%;left:0;right:0;background:white;border-radius:0 0 8px 8px;box-shadow:0 6px 12px rgba(0,0,0,0.15);margin-top:2px;z-index:1001;display:none;text-align:left;max-height:200px;overflow-y:auto;}.recommendation-item{padding:10px 15px;color:#333;cursor:pointer;border-bottom:1px solid #f1f1f1;font-size:14px;transition:background 0.2s;}.recommendation-item:last-child{border-bottom:none;}.recommendation-item:hover{background:#f0f7ff;color:#0066cc;}.container{max-width:1100px;margin:40px auto;padding:0 20px;}.section-title{font-size:24px;margin-bottom:20px;border-left:4px solid #0066cc;padding-left:10px;}.hotel-grid,.blog-grid,.destination-grid,.deals-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-bottom:40px;}.hotel-card,.blog-card,.destination-card,.deal-card{background:white;border-radius:8px;overflow:hidden;box-shadow:0 2px 5px rgba(0,0,0,0.05);transition:transform 0.3s;}.hotel-card:hover,.blog-card:hover,.destination-card:hover,.deal-card:hover{transform:translateY(-5px);}.hotel-card img,.blog-card img,.destination-card img,.deal-card img{width:100%;height:200px;object-fit:cover;}.hotel-content,.blog-content,.destination-content,.deal-content{padding:20px;}.hotel-content h3,.blog-content h3,.destination-content h3,.deal-content h3{font-size:18px;margin-bottom:5px;color:#222;}.hotel-location{font-size:13px;color:#0066cc;font-weight:600;margin-bottom:10px;}.hotel-price{font-size:16px;font-weight:bold;color:#27ae60;margin-bottom:15px;}.blog-content p,.deal-content p{font-size:14px;color:#666;margin-bottom:15px;}.book-btn,.read-more{display:inline-block;text-decoration:none;background:#0066cc;color:white;padding:8px 15px;border-radius:4px;font-weight:bold;font-size:14px;border:none;cursor:pointer;transition:background 0.3s;}.book-btn:hover{background:#004fb3;}.read-more{background:transparent;color:#0066cc;padding:0;}.read-more:hover{background:transparent;color:#004fb3;}.no-results{grid-column:1 / -1;text-align:center;padding:30px;color:#777;font-size:16px;background:white;border-radius:8px;}.booking-list{background:white;border-radius:8px;padding:20px;box-shadow:0 2px 5px rgba(0,0,0,0.05);}.booking-item{display:flex;justify-space:between;align-items:center;padding:15px 0;border-bottom:1px solid #eee;}.booking-item:last-child{border-bottom:none;}.contact-container{background:white;padding:40px;border-radius:8px;max-width:600px;margin:0 auto;box-shadow:0 2px 5px rgba(0,0,0,0.05);}.form-group{margin-bottom:15px;}.form-group label{display:block;font-size:13px;font-weight:600;margin-bottom:5px;color:#555;}.form-group input,.form-group select,.form-group textarea{width:100%;padding:10px;border:1px solid #ddd;border-radius:4px;outline:none;font-size:14px;}.form-group textarea{resize:vertical;height:120px;}.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:#0066cc;}.modal-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);display:flex;justify-content:center;align-items:center;z-index:2000;display:none;}.modal-content{background:white;padding:30px;border-radius:8px;width:100%;max-width:450px;position:relative;box-shadow:0 5px 15px rgba(0,0,0,0.3);animation:fadeIn 0.3s ease;}.article-modal-content{max-width:700px;max-height:85vh;overflow-y:auto;padding:40px;}.article-modal-content h2{color:#222;font-size:26px;margin-bottom:15px;line-height:1.3;}.article-modal-date{font-size:13px;color:#0066cc;font-weight:600;margin-bottom:20px;display:block;}.article-modal-img{width:100%;height:300px;object-fit:cover;border-radius:6px;margin-bottom:20px;}.article-body-text p{font-size:15px;color:#444;margin-bottom:15px;line-height:1.8;}@keyframes fadeIn{from{opacity:0;transform:translateY(-10px);}to{opacity:1;transform:translateY(0);}}.close-modal{position:absolute;top:15px;right:20px;font-size:22px;cursor:pointer;color:#aaa;font-weight:bold;}.close-modal:hover{color:#333;}.modal-content h2{margin-bottom:15px;color:#0066cc;font-size:22px;}.confirm-btn{background:#27ae60;color:white;border:none;width:100%;padding:12px;font-weight:bold;border-radius:4px;cursor:pointer;font-size:16px;transition:background 0.3s;}.confirm-btn:hover{background:#219653;}.success-box{text-align:center;padding:20px 0;}.success-box h3{color:#27ae60;margin-bottom:10px;}.success-box p{font-size:14px;color:#666;margin-bottom:20px;}footer{background:#222;color:white;text-align:center;padding:20px;margin-top:50px;font-size:14px;}@media(max-width:768px){header{padding:15px 20px;}.logo{margin-right:0;}.menu-toggle{display:flex;}nav{position:absolute;top:70px;left:0;width:100%;background:white;box-shadow:0 5px 10px rgba(0,0,0,0.1);overflow:hidden;max-height:0;transition:max-height 0.3s ease-in-out;}nav.mobile-active{max-height:300px;}nav ul{flex-direction:column;gap:0;padding:10px 0;}nav ul li{width:100%;text-align:center;}nav ul li a{display:block;padding:12px 0;border-bottom:1px solid #f1f1f1;}.hero{height:350px;}.hero h1{font-size:26px;}.search-widget{flex-direction:column;padding:10px;gap:8px;}.search-widget input{width:100%;}.container{margin:20px auto;padding:0 15px;}.booking-item{flex-direction:column;align-items:flex-start;gap:10px;}.booking-item div:last-child{text-align:left!important;display:flex;width:100%;justify-content:space-between;align-items:center;}.article-modal-content{padding:20px;}}</style></head><body><header><div class="logo" onclick="switchPage('home')">Rest & Go</div><button class="menu-toggle" id="mobileMenuToggle" onclick="toggleMobileMenu()"><span></span><span></span><span></span></button><nav id="mainNav"><ul><li><a onclick="switchPage('home')" id="nav-home" class="active">Home</a></li><li><a onclick="switchPage('destinations')" id="nav-destinations">Destinations</a></li><li><a onclick="switchPage('bookings')" id="nav-bookings">Bookings</a></li><li><a onclick="switchPage('deals')" id="nav-deals">Deals</a></li><li><a onclick="switchPage('contact')" id="nav-contact">Contact</a></li></ul></nav></header><div id="page-home" class="page-section active-page"><section class="hero"><h1>Find & Book Your Perfect Hotel Stay</h1><div class="search-container"><div class="search-widget"><input type="text" id="searchInput" placeholder="Where are you going? (e.g., Paris, Tokyo)" autocomplete="off"><input type="date" id="dateInput"><button type="button" id="searchBtn">Search Hotels</button></div><div id="recommendationsBox" class="recommendations-box"></div></div></section><div class="container"><h2 class="section-title" id="hotelResultsTitle">Available Hotels</h2><div class="hotel-grid" id="hotelGrid"><div class="hotel-card" data-location="paris" data-name="le grand palace paris" data-price="220"><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80" alt="Paris Hotel"><div class="hotel-content"><h3>Le Grand Palace</h3><div class="hotel-location">Paris, France</div><div class="hotel-price">$220 / night</div><button class="book-btn" onclick="openBooking('Le Grand Palace', 220)">Book Now</button></div></div><div class="hotel-card" data-location="tokyo" data-name="tokyo skyline suites" data-price="180"><img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=600&q=80" alt="Tokyo Hotel"><div class="hotel-content"><h3>Tokyo Skyline Suites</h3><div class="hotel-location">Tokyo, Japan</div><div class="hotel-price">$180 / night</div><button class="book-btn" onclick="openBooking('Tokyo Skyline Suites', 180)">Book Now</button></div></div><div class="hotel-card" data-location="new york" data-name="manhattan luxury loft" data-price="310"><img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80" alt="New York Hotel"><div class="hotel-content"><h3>Manhattan Luxury Loft</h3><div class="hotel-location">New York, USA</div><div class="hotel-price">$310 / night</div><button class="book-btn" onclick="openBooking('Manhattan Luxury Loft', 310)">Book Now</button></div></div><div class="hotel-card" data-location="paris" data-name="seine river boutique hotel" data-price="195"><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80" alt="Paris Boutique"><div class="hotel-content"><h3>Seine River Boutique Hotel</h3><div class="hotel-location">Paris, France</div><div class="hotel-price">$195 / night</div><button class="book-btn" onclick="openBooking('Seine River Boutique Hotel', 195)">Book Now</button></div></div></div><h2 class="section-title">Latest Booking Tips & Guides</h2><div class="blog-grid"><div class="blog-card"><img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80" alt="Hotel Room"><div class="blog-content"><h3>5 Proven Ways to Score Hidden Hotel Deals No One Tells You About</h3><p>Learn how clearing your cookies, calling front desks, and leveraging apps can save you hundreds.</p><button class="read-more" onclick="openArticle(1)">Read Full Article &rarr;</button></div></div><div class="blog-card"><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80" alt="Boutique Hotel"><div class="blog-content"><h3>Boutique vs. Chain Hotels: Which One Should You Choose?</h3><p>Weighing consistency against character? Discover which hotel style fits your travel style.</p><button class="read-more" onclick="openArticle(2)">Read Full Article &rarr;</button></div></div><div class="blog-card"><img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=600&q=80" alt="Resort Pool"><div class="blog-content"><h3>How to Travel During Shoulder Season and Save Big</h3><p>Beat crowds, enjoy cheaper flights, and secure massive hotel rate cuts by timing vacations right.</p><button class="read-more" onclick="openArticle(3)">Read Full Article &rarr;</button></div></div></div></div></div><div id="page-destinations" class="page-section"><div class="container"><h2 class="section-title">Explore Top Destinations</h2><div class="destination-grid"><div class="destination-card"><img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&q=80" alt="Paris"><div class="destination-content"><h3>Paris, France</h3><p>Experience romantic architecture, gastronomy, and historic landmarks.</p><button class="book-btn" onclick="searchByDestination('paris')">View Hotels</button></div></div><div class="destination-card"><img src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=600&q=80" alt="Tokyo"><div class="destination-content"><h3>Tokyo, Japan</h3><p>A mix of ultra-modern neon skyscrapers and ancient temples.</p><button class="book-btn" onclick="searchByDestination('tokyo')">View Hotels</button></div></div><div class="destination-card"><img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=600&q=80" alt="New York"><div class="destination-content"><h3>New York, USA</h3><p>The city that never sleeps offers iconic skylines and culture.</p><button class="book-btn" onclick="searchByDestination('new york')">View Hotels</button></div></div></div></div></div><div id="page-bookings" class="page-section"><div class="container"><h2 class="section-title">Your Confirmed Bookings</h2><div class="booking-list" id="bookingsListContainer"><p id="noBookingsMsg" style="color: #666; text-align: center; padding: 20px;">You have no active reservations yet. Go to Home or Destinations to book a stay!</p></div></div></div><div id="page-deals" class="page-section"><div class="container"><h2 class="section-title">Exclusive Hotel Deals & Discounts</h2><div class="deals-grid"><div class="deal-card"><img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=600&q=80" alt="Deal 1"><div class="deal-content"><h3>Summer Escape Special</h3><p>Get up to 35% off selected boutique properties across Europe.</p><span class="hotel-price">Promo Code: SUMMER35</span></div></div><div class="deal-card"><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80" alt="Deal 2"><div class="deal-content"><h3>Last-Minute Mobile Deal</h3><p>Save an extra 20% on same-day or next-day reservations.</p><span class="hotel-price">Auto-Applied at Checkout</span></div></div><div class="deal-card"><img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=600&q=80" alt="Deal 3"><div class="deal-content"><h3>Free Breakfast Package</h3><p>Book any Tokyo suite this month and enjoy complimentary breakfast.</p><span class="hotel-price">Promo Code: TOKYOFEAST</span></div></div></div></div></div><div id="page-contact" class="page-section"><div class="container"><h2 class="section-title" style="text-align: center; border-left: none;">Get in Touch</h2><div class="contact-container"><form onsubmit="submitContact(event)"><div class="form-group"><label for="contactName">Your Name</label><input type="text" id="contactName" required placeholder="Jane Doe"></div><div class="form-group"><label for="contactEmail">Email Address</label><input type="email" id="contactEmail" required placeholder="jane@example.com"></div><div class="form-group"><label for="contactMessage">Message</label><textarea id="contactMessage" required placeholder="How can our support team help you?"></textarea></div><button type="submit" class="confirm-btn">Send Message</button></form><div id="contactSuccessMsg" style="display: none; text-align: center; margin-top: 15px; color: #27ae60; font-weight: bold;">Thank you! Your message has been sent successfully.</div></div></div></div><div class="modal-overlay" id="bookingModal"><div class="modal-content"><span class="close-modal" onclick="closeBooking()">&times;</span><div id="modalFormContainer"><h2 id="modalHotelName">Book Hotel</h2><form id="bookingForm" onsubmit="submitBooking(event)"><div class="form-group"><label for="guestName">Full Name</label><input type="text" id="guestName" required placeholder="John Doe"></div><div class="form-group"><label for="guestEmail">Email Address</label><input type="email" id="guestEmail" required placeholder="john@example.com"></div><div class="form-group"><label for="checkInDate">Check-In Date</label><input type="date" id="checkInDate" required></div><div class="form-group"><label for="nightsCount">Number of Nights</label><input type="number" id="nightsCount" min="1" value="1" required oninput="calculateTotal()"></div><div class="form-group"><label>Total Price: <span id="totalPriceDisplay" style="color: #27ae60; font-weight: bold;">$0</span></label></div><button type="submit" class="confirm-btn">Confirm Reservation</button></form></div><div id="modalSuccessContainer" style="display: none;"><div class="success-box"><h3>Booking Confirmed!</h3><p id="successDetails">Your reservation has been successfully booked.</p><button class="book-btn" onclick="closeBooking()">Close Window</button></div></div></div></div><div class="modal-overlay" id="articleModal"><div class="modal-content article-modal-content"><span class="close-modal" onclick="closeArticle()">&times;</span><span class="article-modal-date" id="articleModalDate">Published: Today</span><h2 id="articleModalTitle">Article Title</h2><img id="articleModalImg" class="article-modal-img" src="" alt="Article Visual"><div class="article-body-text" id="articleModalBody"></div></div></div><footer><p>&copy; 2026 Rest & Go. All rights reserved.</p></footer><script>let userBookings=[];const articlesData={1:{title:"5 Proven Ways to Score Hidden Hotel Deals No One Tells You About",date:"Published by Rest & Go Editorial | 5 min read",image:"https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",content:\`<p>Booking a hotel room online can sometimes feel like playing a game where the rules change every second. Prices fluctuate based on cookies, search history, and device types. However, savvy travelers know how to bypass these tracking mechanisms and unlock heavily discounted inventory.</p><p><strong>1. Clear Your Browser Cookies or Use Incognito Mode:</strong> Dynamic pricing algorithms track your repeat visits to specific properties. When the system notices you keep looking at the exact same luxury suite, it may artificially inflate prices to create a false sense of urgency. Browsing incognito prevents this.</p><p><strong>2. Contact the Front Desk Directly:</strong> Online travel agencies (OTAs) take hefty commissions—sometimes up to 20% or 30%. If you call a hotel directly during off-peak hours and inquire about unlisted corporate rates, loyalty perks, or unassigned room discounts, front desk managers are often empowered to offer better rates or free upgrades.</p><p><strong>3. Leverage Mobile-Only Apps and Secret Promos:</strong> Many booking platforms release exclusive flash deals designed exclusively for mobile app users. Checking deals right from your phone before executing a booking can yield immediate 15% to 25% savings.</p><p><strong>4. Travel on Off-Peak Days:</strong> Shifting your check-in from Friday or Saturday to Sunday or Wednesday instantly drops room rates dramatically in business hubs and tourist centers alike.</p>\`},2:{title:"Boutique vs. Chain Hotels: Which One Should You Choose?",date:"Published by Rest & Go Editorial | 4 min read",image:"https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80",content:\`<p>When planning a trip, accommodation choice dictates the core texture of your experience. Should you opt for the predictable comfort of a global mega-chain or the localized artistic charm of an independent boutique hotel?</p><p><strong>The Case for Chain Hotels:</strong> Global chains excel at consistency. When you book a major recognized brand name, you know exactly what your mattress firmness, room layout, breakfast selection, and service standard will look like before you even step foot in the lobby. Furthermore, business frequent flyer and point programs make racking up rewards very lucrative for frequent travelers.</p><p><strong>The Case for Boutique Hotels:</strong> Boutique properties thrive on unique design, local immersion, and personality. Instead of cookie-cutter corporate artwork, you get locally sourced interior decor, bespoke hospitality, and neighborhood insights directly from staff who actually live in the community. Boutique hotels are typically situated in vibrant, walkable historic districts rather than generic commercial blocks.</p><p><strong>Verdict:</strong> Choose chains when traveling for rigid corporate itineraries or airport layovers where reliability is supreme. Choose boutiques when you want your accommodation to become a memorable highlight of your vacation experience.</p>\`},3:{title:"How to Travel During Shoulder Season and Save Big",date:"Published by Rest & Go Editorial | 6 min read",image:"https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=800&q=80",content:\`<p>Peak tourist season brings swarming crowds, long museum queues, suffocating heat, and sky-high pricing across flights and hotels. Conversely, low season can sometimes mean closed attractions and dreary weather. The sweet spot? The shoulder season.</p><p><strong>What is Shoulder Season?</strong> It represents the transition window right between peak and off-peak months. For instance, visiting Europe or the Mediterranean in May or September, or checking out tropical Asian destinations right before or after monsoon periods.</p><p><strong>Major Financial and Experiential Benefits:</strong></p><p>• <strong>Substantial Cost Reductions:</strong> Airlines and hotels drop rates aggressively to keep occupancy stable during these months, saving you up to 40% on identical accommodation.</p><p>• <strong>Authentic Local Interactions:</strong> With fewer tourists clogging local streets, restaurant owners, tour guides, and artisans have more time to converse, providing a deeper cultural window into the region.</p><p>• <strong>Better Weather Balance:</strong> You often enjoy pleasant, mild temperatures ideal for walking tours without scorching heat waves or freezing winds.</p>\`}};const articleModal=document.getElementById('articleModal');const articleModalTitle=document.getElementById('articleModalTitle');const articleModalDate=document.getElementById('articleModalDate');const articleModalImg=document.getElementById('articleModalImg');const articleModalBody=document.getElementById('articleModalBody');function openArticle(articleId){const article=articlesData[articleId];if(article){articleModalTitle.innerText=article.title;articleModalDate.innerText=article.date;articleModalImg.src=article.image;articleModalBody.innerHTML=article.content;articleModal.style.display='flex';document.body.style.overflow='hidden';}}function closeArticle(){articleModal.style.display='none';document.body.style.overflow='auto';}function toggleMobileMenu(){const nav=document.getElementById('mainNav');nav.classList.toggle('mobile-active');}function switchPage(pageId){const pages=document.querySelectorAll('.page-section');pages.forEach(page=>page.classList.remove('active-page'));const navLinks=document.querySelectorAll('nav ul li a');navLinks.forEach(link=>link.classList.remove('active'));const targetPage=document.getElementById('page-'+pageId);if(targetPage){targetPage.classList.add('active-page');}const targetNav=document.getElementById('nav-'+pageId);if(targetNav){targetNav.classList.add('active');}document.getElementById('mainNav').classList.remove('mobile-active');window.scrollTo(0,0);if(pageId==='bookings'){renderBookingsList();}}const searchInput=document.getElementById('searchInput');const searchBtn=document.getElementById('searchBtn');const hotelGrid=document.getElementById('hotelGrid');const hotelCards=hotelGrid.getElementsByClassName('hotel-card');const recommendationsBox=document.getElementById('recommendationsBox');const searchSuggestions=["Paris, France","Tokyo, Japan","New York, USA","Le Grand Palace","Tokyo Skyline Suites","Manhattan Luxury Loft","Seine River Boutique Hotel"];searchInput.addEventListener('input',function(){const query=searchInput.value.toLowerCase().trim();recommendationsBox.innerHTML='';if(query===''){recommendationsBox.style.display='none';filterHotels();return;}const filteredSuggestions=searchSuggestions.filter(item=>item.toLowerCase().includes(query));if(filteredSuggestions.length>0){recommendationsBox.style.display='block';filteredSuggestions.forEach(suggestion=>{const div=document.createElement('div');div.className='recommendation-item';div.innerText=suggestion;div.addEventListener('click',function(){searchInput.value=suggestion;recommendationsBox.style.display='none';filterHotels();});recommendationsBox.appendChild(div);});}else{recommendationsBox.style.display='none';}});document.addEventListener('click',function(e){if(!searchInput.contains(e.target)&&!recommendationsBox.contains(e.target)){recommendationsBox.style.display='none';}});function filterHotels(){const query=searchInput.value.toLowerCase().trim();let hasVisibleHotels=false;const existingMsg=document.getElementById('noResultsMsg');if(existingMsg){existingMsg.remove();}for(let i=0;i<hotelCards.length;i++){const card=hotelCards[i];const location=card.getAttribute('data-location');const name=card.getAttribute('data-name');if(location.includes(query)||name.includes(query)||query===""){card.style.display="block";hasVisibleHotels=true;}else{card.style.display="none";}}if(!hasVisibleHotels){const msg=document.createElement('div');msg.id='noResultsMsg';msg.className='no-results';msg.innerText='No hotels found matching your search. Try typing "Paris", "Tokyo", or "New York".';hotelGrid.appendChild(msg);}}searchBtn.addEventListener('click',function(){recommendationsBox.style.display='none';filterHotels();});searchInput.addEventListener('keyup',function(event){if(event.key==='Enter'){recommendationsBox.style.display='none';filterHotels();}});function searchByDestination(destinationName){switchPage('home');searchInput.value=destinationName;filterHotels();}const bookingModal=document.getElementById('bookingModal');const modalHotelName=document.getElementById('modalHotelName');const modalFormContainer=document.getElementById('modalFormContainer');const modalSuccessContainer=document.getElementById('modalSuccessContainer');const nightsCountInput=document.getElementById('nightsCount');const totalPriceDisplay=document.getElementById('totalPriceDisplay');const bookingForm=document.getElementById('bookingForm');let selectedHotelPrice=0;let activeHotelTitle="";function openBooking(hotelName,pricePerNight){activeHotelTitle=hotelName;selectedHotelPrice=pricePerNight;modalHotelName.innerText="Book: "+hotelName;nightsCountInput.value=1;calculateTotal();modalFormContainer.style.display='block';modalSuccessContainer.style.display='none';bookingForm.reset();nightsCountInput.value=1;calculateTotal();bookingModal.style.display='flex';document.body.style.overflow='hidden';}function closeBooking(){bookingModal.style.display='none';document.body.style.overflow='auto';}function calculateTotal(){const nights=parseInt(nightsCountInput.value)||1;const total=nights*selectedHotelPrice;totalPriceDisplay.innerText="$"+total;}function submitBooking(event){event.preventDefault();const guestName=document.getElementById('guestName').value;const checkIn=document.getElementById('checkInDate').value;const nights=nightsCountInput.value;const total=nights*selectedHotelPrice;userBookings.push({hotel:activeHotelTitle,name:guestName,checkIn:checkIn,nights:nights,total:total});document.getElementById('successDetails').innerText=\`Thank you, \${guestName}! Your stay at \${activeHotelTitle} for \${nights} night(s) totaling $\${total} has been secured.\`;modalFormContainer.style.display='none';modalSuccessContainer.style.display='block';}function renderBookingsList(){const container=document.getElementById('bookingsListContainer');container.innerHTML='';if(userBookings.length===0){container.innerHTML='<p style="color: #666; text-align: center; padding: 20px;">You have no active reservations yet. Go to Home or Destinations to book a stay!</p>';return;}userBookings.forEach((b)=>{const item=document.createElement('div');item.className='booking-item';item.innerHTML=\`<div><h3 style="font-size: 16px; color: #0066cc;">\${b.hotel}</h3><p style="font-size: 13px; color: #555;">Guest: \${b.name} | Check-in: \${b.checkIn} (\${b.nights} Night\${b.nights > 1 ? 's' : ''})</p></div><div style="text-align: right;"><span style="font-weight: bold; color: #27ae60; display: block; margin-bottom: 5px;">$\${b.total}</span><span style="font-size: 12px; background: #e2f0d9; color: #385723; padding: 3px 8px; border-radius: 4px;">Confirmed</span></div>\`;container.appendChild(item);});}function submitContact(event){event.preventDefault();document.getElementById('contactSuccessMsg').style.display='block';event.target.reset();}window.onclick=function(event){if(event.target==bookingModal){closeBooking();}if(event.target==articleModal){closeArticle();}}<\/script></body></html>`,
 
-      project4: `<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Minesweeper</title><style>*{box-sizing:border-box;user-select:none;}body{font-family:'Segoe UI',sans-serif;background-color:#2c3e50;color:#ecf0f1;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;margin:0;}.game-container{background-color:#34495e;padding:20px;border-radius:10px;text-align:center;}.controls{margin-bottom:15px;display:flex;gap:10px;justify-content:center;}select,button{padding:8px 12px;border:none;border-radius:5px;background-color:#1abc9c;color:white;font-weight:bold;cursor:pointer;}.stats-bar{display:flex;justify-space:around;background-color:#2c3e50;padding:10px;border-radius:5px;margin-bottom:15px;font-weight:bold;}#board{display:grid;gap:2px;background-color:#7f8c8d;padding:2px;border-radius:5px;margin:0 auto;}.cell{width:30px;height:30px;background-color:#bdc3c7;display:flex;align-items:center;justify-content:center;font-weight:bold;cursor:pointer;}.cell.revealed{background-color:#ecf0f1;color:#2c3e50;}.cell.mine{background-color:#e74c3c;}.cell.flagged{background-color:#f1c40f;}</style></head><body><div class="game-container"><h1>Minesweeper</h1><div class="controls"><select id="difficulty" onchange="startGame()"><option value="easy">Easy (9x9)</option><option value="medium" selected>Medium (16x16)</option></select><button onclick="startGame()">New Game</button></div><div class="stats-bar"><div>💣 Mines: <span id="mine-count">0</span></div><div>⏱️ Time: <span id="timer">0</span>s</div></div><div id="board"></div></div><script>const levels={easy:{rows:9,cols:9,mines:10},medium:{rows:16,cols:16,mines:40}};let board=[],rows,cols,mines,gameOver=false,timerInterval,timeElapsed=0,firstClick=true,revealedCount=0;function startGame(){const config=levels[document.getElementById('difficulty').value];rows=config.rows;cols=config.cols;mines=config.mines;gameOver=false;firstClick=true;clearInterval(timerInterval);timeElapsed=0;revealedCount=0;document.getElementById('timer').textContent=0;document.getElementById('mine-count').textContent=mines;const boardEl=document.getElementById('board');boardEl.style.gridTemplateColumns=\`repeat(\${cols},30px)\`;boardEl.innerHTML='';board=[];for(let r=0;r<rows;r++){let row=[];for(let c=0;c<cols;c++){row.push({r,c,isMine:false,revealed:false,flagged:false,count:0});const cell=document.createElement('div');cell.classList.add('cell');cell.dataset.r=r;cell.dataset.c=c;cell.addEventListener('click',()=>clickCell(r,c));cell.addEventListener('contextmenu',(e)=>{e.preventDefault();flagCell(r,c);});boardEl.appendChild(cell);}board.push(row);}}function clickCell(r,c){if(gameOver||board[r][c].flagged||board[r][c].revealed)return;if(firstClick){firstClick=false;placeMines(r,c);timerInterval=setInterval(()=>{timeElapsed++;document.getElementById('timer').textContent=timeElapsed;},1000);}const cell=board[r][c];if(cell.isMine){endGame(false);return;}reveal(r,c);}function placeMines(sr,sc){let p=0;while(p<mines){let r=Math.floor(Math.random()*rows),c=Math.floor(Math.random()*cols);if(!board[r][c].isMine&&!(r===sr&&c===sc)){board[r][c].isMine=true;p++;}}for(let r=0;r<rows;r++)for(let c=0;c<cols;c++){if(board[r][c].isMine)continue;let cnt=0;getN(r,c).forEach(n=>{if(n.isMine)cnt++;});board[r][c].count=cnt;}}function getN(r,c){let res=[];for(let dr=-1;dr<=1;dr++)for(let dc=-1;dc<=1;dc++){if(dr===0&&dc===0)continue;if(r+dr>=0&&r+dr<rows&&c+dc>=0&&c+dc<cols)res.push(board[r+dr][c+dc]);}return res;}function reveal(r,c){const cell=board[r][c];if(cell.revealed||cell.flagged)return;cell.revealed=true;revealedCount++;const el=document.querySelector(\`.cell[data-r="\${r}"][data-c="\${c}"]\`);el.classList.add('revealed');if(cell.count>0){el.textContent=cell.count;}else{getN(r,c).forEach(n=>reveal(n.r,n.c));}}function flagCell(r,c){if(gameOver||board[r][c].revealed)return;const cell=board[r][c];const el=document.querySelector(\`.cell[data-r="\${r}"][data-c="\${c}"]\`);cell.flagged=!cell.flagged;el.classList.toggle('flagged');el.textContent=cell.flagged?'🚩':'';}function endGame(won){gameOver=true;clearInterval(timerInterval);alert(won?'You Won!':'Game Over!');}startGame();<\/script></body></html>`
+      project4: `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Parfum | Luxury Fragrances BGC</title>
+    <style>
+        :root {
+            --bg-color: #faf8f5;
+            --text-color: #1a1a1a;
+            --accent-color: #c5a059;
+            --card-bg: #ffffff;
+            --border-color: #e5e5e5;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Playfair Display', Didot, Georgia, serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            padding-bottom: 80px;
+        }
+
+        .promo-bar {
+            background: #111;
+            color: #fff;
+            text-align: center;
+            padding: 8px;
+            font-size: 0.75rem;
+            font-family: sans-serif;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 6%;
+            background: #fff;
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 2rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        nav a {
+            font-family: sans-serif;
+            text-decoration: none;
+            color: var(--text-color);
+            margin: 0 12px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.2s;
+        }
+
+        nav a:hover, nav a.active-link {
+            color: var(--accent-color);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .action-btn {
+            cursor: pointer;
+            font-family: sans-serif;
+            font-size: 0.85rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Page Views */
+        .page-section {
+            display: none;
+        }
+
+        .page-section.active-page {
+            display: block;
+        }
+
+        /* Hero / Header */
+        .shop-header {
+            text-align: center;
+            padding: 50px 20px 30px;
+        }
+
+        .shop-header h1 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        .shop-header p {
+            font-family: sans-serif;
+            color: #666;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        /* Toolbar Controls */
+        .shop-controls {
+            max-width: 1200px;
+            margin: 20px auto 40px;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-family: sans-serif;
+        }
+
+        .search-box {
+            padding: 10px 15px;
+            border: 1px solid var(--border-color);
+            width: 250px;
+            font-size: 0.85rem;
+            outline: none;
+        }
+
+        .filter-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            padding: 8px 16px;
+            cursor: pointer;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.2s ease;
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--text-color);
+            color: white;
+            border-color: var(--text-color);
+        }
+
+        /* Products Grid */
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 35px;
+        }
+
+        .product-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            transition: box-shadow 0.3s ease, transform 0.2s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        .product-image-wrap {
+            width: 100%;
+            height: 240px;
+            overflow: hidden;
+            background: #f9f9f9;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-image-wrap img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover .product-image-wrap img {
+            transform: scale(1.05);
+        }
+
+        .product-category {
+            font-family: sans-serif;
+            font-size: 0.68rem;
+            text-transform: uppercase;
+            color: var(--accent-color);
+            letter-spacing: 1.5px;
+            margin-bottom: 6px;
+        }
+
+        .product-title {
+            font-size: 1.25rem;
+            margin-bottom: 6px;
+        }
+
+        .product-notes {
+            font-family: sans-serif;
+            font-size: 0.78rem;
+            color: #777;
+            margin-bottom: 12px;
+            min-height: 32px;
+        }
+
+        .product-price {
+            font-family: sans-serif;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        .card-actions {
+            display: flex;
+            gap: 8px;
+        }
+
+        .btn-primary {
+            background: var(--text-color);
+            color: white;
+            border: none;
+            padding: 12px;
+            cursor: pointer;
+            flex: 1;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            transition: background 0.2s;
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-color);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            border: 1px solid var(--text-color);
+            color: var(--text-color);
+            padding: 10px;
+            cursor: pointer;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            transition: all 0.2s;
+        }
+
+        .btn-secondary:hover {
+            background: var(--text-color);
+            color: white;
+        }
+
+        /* Content Pages Styling */
+        .content-box {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 0 20px;
+            line-height: 1.8;
+            font-family: sans-serif;
+        }
+
+        .content-box h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .location-card {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            padding: 30px;
+            margin-top: 30px;
+            border-radius: 4px;
+        }
+
+        .location-card h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--accent-color);
+        }
+
+        /* Orders Page & Status Badges */
+        .order-card {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            padding: 24px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .order-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 12px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 5px 12px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-radius: 20px;
+        }
+
+        .status-processing { background: #fff3cd; color: #856404; }
+        .status-shipped { background: #cce5ff; color: #004085; }
+        .status-delivered { background: #d4edda; color: #155724; }
+        .status-cancelled { background: #f8d7da; color: #721c24; }
+
+        .order-item-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px dashed #f0f0f0;
+            font-size: 0.9rem;
+        }
+
+        .order-item-row:last-child {
+            border-bottom: none;
+        }
+
+        .remove-item-btn {
+            color: #d9534f;
+            cursor: pointer;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            margin-left: 15px;
+            font-weight: bold;
+        }
+
+        .remove-item-btn:hover {
+            text-decoration: underline;
+        }
+
+        .delete-order-btn {
+            background: transparent;
+            border: 1px solid #d9534f;
+            color: #d9534f;
+            padding: 5px 10px;
+            font-size: 0.75rem;
+            cursor: pointer;
+            border-radius: 3px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.2s;
+        }
+
+        .delete-order-btn:hover {
+            background: #d9534f;
+            color: white;
+        }
+
+        /* Modals & Drawers */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            justify-content: flex-end;
+            z-index: 200;
+        }
+
+        .modal-content {
+            background: white;
+            width: 100%;
+            max-width: 420px;
+            height: 100%;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .modal-center {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dialog-box {
+            background: white;
+            width: 90%;
+            max-width: 450px;
+            max-height: 90vh;
+            overflow-y: auto;
+            padding: 30px;
+            border-radius: 4px;
+            font-family: sans-serif;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        .close-btn {
+            cursor: pointer;
+            font-size: 1.5rem;
+            font-family: sans-serif;
+        }
+
+        .cart-items {
+            flex-grow: 1;
+            overflow-y: auto;
+            font-family: sans-serif;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 10px;
+        }
+
+        .checkout-btn {
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            cursor: pointer;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* Form Controls */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--border-color);
+            font-size: 0.9rem;
+            outline: none;
+        }
+
+        .payment-option {
+            border: 1px solid var(--border-color);
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: border-color 0.2s;
+        }
+
+        .payment-option:hover {
+            border-color: var(--accent-color);
+        }
+
+        .payment-option input[type="radio"] {
+            accent-color: var(--accent-color);
+        }
+
+        .payment-details {
+            display: none;
+            background: #f9f9f9;
+            padding: 12px;
+            margin-top: -5px;
+            margin-bottom: 10px;
+            border: 1px solid var(--border-color);
+            border-top: none;
+            font-size: 0.85rem;
+        }
+
+        /* Auth Tabs */
+        .auth-tabs {
+            display: flex;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 20px;
+        }
+
+        .auth-tab {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid transparent;
+        }
+
+        .auth-tab.active-tab {
+            border-bottom-color: var(--accent-color);
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="promo-bar">Complimentary Shipping Across Metro Manila on Orders Over ₱8,000</div>
+
+    <header>
+        <div class="logo" onclick="switchPage('shop')">Aura</div>
+        <nav>
+            <a href="javascript:void(0)" onclick="switchPage('shop')" id="nav-shop" class="active-link">Shop All</a>
+            <a href="javascript:void(0)" onclick="switchPage('orders')" id="nav-orders">My Orders (<span id="ordersNavCount">0</span>)</a>
+            <a href="javascript:void(0)" onclick="switchPage('about')" id="nav-about">About Us</a>
+            <a href="javascript:void(0)" onclick="switchPage('location')" id="nav-location">Location & Contact</a>
+        </nav>
+        <div class="header-actions">
+            <div id="accountNav" class="action-btn" onclick="handleAccountClick()">
+                👤 <span id="accountNavText">Sign In</span>
+            </div>
+            <div class="action-btn" onclick="toggleCart()">
+                🛒 BAG (<span id="cartCount">0</span>)
+            </div>
+        </div>
+    </header>
+
+    <!-- SHOP PAGE -->
+    <div id="page-shop" class="page-section active-page">
+        <div class="shop-header">
+            <h1>Signature Collection</h1>
+            <p>EXPLORE OUR EXTRAITS DE PARFUM AND EAUX DE PARFUM</p>
+        </div>
+
+        <div class="shop-controls">
+            <input type="text" id="searchInput" class="search-box" placeholder="Search by name or note..." onkeyup="filterCatalog()">
+            
+            <div class="filter-group">
+                <button class="filter-btn active" onclick="setCategory('All', this)">All</button>
+                <button class="filter-btn" onclick="setCategory('Floral', this)">Floral</button>
+                <button class="filter-btn" onclick="setCategory('Citrus', this)">Citrus</button>
+                <button class="filter-btn" onclick="setCategory('Woody', this)">Woody</button>
+                <button class="filter-btn" onclick="setCategory('Oriental', this)">Oriental</button>
+            </div>
+        </div>
+
+        <main class="main-container">
+            <div class="products-grid" id="productGrid"></div>
+        </main>
+    </div>
+
+    <!-- MY ORDERS PAGE -->
+    <div id="page-orders" class="page-section">
+        <div class="content-box">
+            <h2>Order Tracking & History</h2>
+            <p style="margin-bottom: 25px; color: #666;">View your recent purchases, remove unwanted items, or cancel full orders.</p>
+            <div id="ordersListContainer"></div>
+        </div>
+    </div>
+
+    <!-- ACCOUNT PROFILE PAGE -->
+    <div id="page-account" class="page-section">
+        <div class="content-box">
+            <h2>My Profile</h2>
+            <div class="location-card">
+                <h3 id="profileName">User Profile</h3>
+                <p><strong>Email:</strong> <span id="profileEmail">user@example.com</span></p>
+                <p style="margin-top: 10px;"><strong>Member Since:</strong> 2026</p>
+                <div style="margin-top: 20px;">
+                    <button class="btn-secondary" onclick="logoutUser()">Log Out</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT PAGE -->
+    <div id="page-about" class="page-section">
+        <div class="content-box">
+            <h2>Crafting Olfactory Art</h2>
+            <p style="margin-bottom: 20px;">Founded on the principle of minimal elegance and sensory depth, Aura Parfum crafts artisanal scents using sustainably harvested botanicals and rare raw materials sourced globally.</p>
+            <p style="margin-bottom: 20px;">Each blend undergoes a meticulous 6-week maceration process to achieve full resonance and longevity on skin. Our formulations are 100% vegan, cruelty-free, and bottled in recyclable glass.</p>
+            <p>Visit our flagship boutique located adjacent to SM Aura Premier in Taguig to experience scent consultations tailored to your skin chemistry.</p>
+        </div>
+    </div>
+
+    <!-- LOCATION & CONTACT PAGE -->
+    <div id="page-location" class="page-section">
+        <div class="content-box">
+            <h2>Boutique Location & Concierge</h2>
+            <p>Experience our full fragrance collection in person or book a private olfactory consultation with our master perfumers.</p>
+
+            <div class="location-card">
+                <h3>Flagship Store — BGC Taguig</h3>
+                <p><strong>Address:</strong> 26th Street corner McKinley Parkway (Near SM Aura Premier), Bonifacio Global City, Taguig, 1630 Metro Manila</p>
+                <p style="margin-top: 10px;"><strong>Landmark:</strong> Directly across from the McKinley Parkway entrance of SM Aura Premier.</p>
+                <p style="margin-top: 10px;"><strong>Boutique Hours:</strong> Monday – Sunday | 10:00 AM – 10:00 PM</p>
+                <p style="margin-top: 10px;"><strong>Client Concierge:</strong> +63 (2) 8888-2872</p>
+                <p style="margin-top: 5px;"><strong>Email:</strong> concierge@auraparfum.com</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOGIN / REGISTER MODAL -->
+    <div class="modal modal-center" id="authModal">
+        <div class="dialog-box">
+            <div class="modal-header">
+                <h2>Account Access</h2>
+                <span class="close-btn" onclick="closeAuthModal()">&times;</span>
+            </div>
+
+            <div class="auth-tabs">
+                <div class="auth-tab active-tab" id="loginTab" onclick="toggleAuthMode('login')">Sign In</div>
+                <div class="auth-tab" id="registerTab" onclick="toggleAuthMode('register')">Register</div>
+            </div>
+
+            <!-- LOGIN FORM -->
+            <form id="loginForm" onsubmit="processLogin(event)">
+                <div class="form-group">
+                    <label for="loginEmail">Email Address</label>
+                    <input type="email" id="loginEmail" required placeholder="maria@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required placeholder="••••••••">
+                </div>
+                <button type="submit" class="checkout-btn" style="margin-top: 10px;">Sign In</button>
+            </form>
+
+            <!-- REGISTER FORM -->
+            <form id="registerForm" onsubmit="processRegister(event)" style="display: none;">
+                <div class="form-group">
+                    <label for="regName">Full Name</label>
+                    <input type="text" id="regName" required placeholder="Maria Santos">
+                </div>
+                <div class="form-group">
+                    <label for="regEmail">Email Address</label>
+                    <input type="email" id="regEmail" required placeholder="maria@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="regPassword">Password</label>
+                    <input type="password" id="regPassword" required placeholder="••••••••">
+                </div>
+                <button type="submit" class="checkout-btn" style="margin-top: 10px;">Create Account</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Cart Drawer Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Your Shopping Bag</h2>
+                <span class="close-btn" onclick="toggleCart()">&times;</span>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <p style="text-align: center; color: #888; margin-top: 30px;">Your shopping bag is empty.</p>
+            </div>
+            <div style="margin-top: 20px;">
+                <h3 style="font-family: sans-serif; margin-bottom: 15px; display: flex; justify-content: space-between;">
+                    <span>Total:</span>
+                    <span>₱<span id="cartTotal">0</span></span>
+                </h3>
+                <button class="checkout-btn" onclick="openCheckoutModal()">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout & Payment Modal -->
+    <div class="modal modal-center" id="checkoutModal">
+        <div class="dialog-box">
+            <div class="modal-header">
+                <h2>Checkout & Payment</h2>
+                <span class="close-btn" onclick="closeCheckoutModal()">&times;</span>
+            </div>
+
+            <form id="checkoutForm" onsubmit="processPayment(event)">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" required placeholder="e.g. Maria Santos">
+                </div>
+
+                <div class="form-group">
+                    <label for="contactEmail">Email Address</label>
+                    <input type="email" id="contactEmail" required placeholder="maria@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="shippingAddress">Delivery Address</label>
+                    <input type="text" id="shippingAddress" required placeholder="Street Name, Barangay, City">
+                </div>
+
+                <div style="margin-top: 20px; margin-bottom: 15px;">
+                    <label style="font-size: 0.8rem; text-transform: uppercase; font-weight: 600; letter-spacing: 0.5px;">Select Payment Method</label>
+                </div>
+
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod" value="GCash" checked onclick="togglePaymentFields('e-wallet')">
+                    <span>GCash</span>
+                </label>
+
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod" value="Maya" onclick="togglePaymentFields('e-wallet')">
+                    <span>Maya</span>
+                </label>
+
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod" value="Card" onclick="togglePaymentFields('card')">
+                    <span>Credit / Debit Card</span>
+                </label>
+
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod" value="COD" onclick="togglePaymentFields('cod')">
+                    <span>Cash on Delivery (COD)</span>
+                </label>
+
+                <!-- Dynamic Payment Inputs -->
+                <div id="ewalletFields" class="payment-details" style="display: block;">
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <label for="mobileNum">Mobile Number</label>
+                        <input type="tel" id="mobileNum" placeholder="0917XXXXXXX">
+                    </div>
+                </div>
+
+                <div id="cardFields" class="payment-details">
+                    <div class="form-group">
+                        <label for="cardNumber">Card Number</label>
+                        <input type="text" id="cardNumber" placeholder="1234 5678 9101 1121">
+                    </div>
+                    <div style="display: flex; gap: 10px;">
+                        <div class="form-group" style="flex: 1;">
+                            <label for="cardExpiry">Expiry</label>
+                            <input type="text" id="cardExpiry" placeholder="MM/YY">
+                        </div>
+                        <div class="form-group" style="flex: 1;">
+                            <label for="cardCvc">CVC</label>
+                            <input type="password" id="cardCvc" maxlength="4" placeholder="123">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="codFields" class="payment-details">
+                    <p style="color: #666;">Pay with cash upon receipt of your order.</p>
+                </div>
+
+                <div style="margin-top: 25px; border-top: 1px solid var(--border-color); padding-top: 15px;">
+                    <h4 style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+                        <span>Total Amount:</span>
+                        <span>₱<span id="checkoutTotal">0</span></span>
+                    </h4>
+                    <button type="submit" class="checkout-btn">Complete Purchase</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const products = [
+            { id: 1, name: "Velvet Rose", category: "Floral", notes: "Damask Rose, Oud, Clove", price: 10500, image: "https://static.vecteezy.com/system/resources/previews/072/269/315/non_2x/luxury-amber-perfume-bottle-with-gold-cap-studio-product-shot-free-png.png" },
+            { id: 2, name: "Solaris Neroli", category: "Citrus", notes: "Orange Blossom, Bergamot, Sea Salt", price: 8500, image: "https://goodmockups.com/wp-content/uploads/2024/08/Free-Luxury-Perfume-Bottle-Mockup-PSD.jpg" },
+            { id: 3, name: "Midnight Amber", category: "Oriental", notes: "Amber, Vanilla, Smoked Birch", price: 11800, image: "https://static.vecteezy.com/system/resources/previews/058/209/719/non_2x/luxury-perfume-bottle-with-blue-aesthetic-photo.jpg" },
+            { id: 4, name: "Santal 09", category: "Woody", notes: "Sandalwood, Cardamom, Iris", price: 11000, image: "https://static.vecteezy.com/system/resources/previews/072/269/315/non_2x/luxury-amber-perfume-bottle-with-gold-cap-studio-product-shot-free-png.png" },
+            { id: 5, name: "Jasmine Noir", category: "Floral", notes: "Night Jasmine, Gardenia, Cashmere", price: 9800, image: "https://goodmockups.com/wp-content/uploads/2024/08/Free-Luxury-Perfume-Bottle-Mockup-PSD.jpg" },
+            { id: 6, name: "Smoked Vanilla", category: "Oriental", notes: "Bourbon Vanilla, Tonka Bean, Myrrh", price: 12500, image: "https://static.vecteezy.com/system/resources/previews/058/209/719/non_2x/luxury-perfume-bottle-with-blue-aesthetic-photo.jpg" }
+        ];
+
+        let activeCategory = 'All';
+        let cart = [];
+        let currentUser = null;
+
+        // Registered user store (mock database)
+        let users = [
+            { name: "Maria Santos", email: "maria@example.com", password: "password123" }
+        ];
+
+        // Start with an empty orders list so no items appear automatically
+        let orders = [];
+
+        function switchPage(pageId) {
+            document.querySelectorAll('.page-section').forEach(page => page.classList.remove('active-page'));
+            document.querySelectorAll('nav a').forEach(a => a.classList.remove('active-link'));
+            
+            document.getElementById(\`page-\${pageId}\`).classList.add('active-page');
+            const activeNav = document.getElementById(\`nav-\${pageId}\`);
+            if(activeNav) activeNav.classList.add('active-link');
+        }
+
+        /* Authentication System Functions */
+        function handleAccountClick() {
+            if (currentUser) {
+                switchPage('account');
+            } else {
+                openAuthModal();
+            }
+        }
+
+        function openAuthModal() {
+            document.getElementById('authModal').style.display = 'flex';
+        }
+
+        function closeAuthModal() {
+            document.getElementById('authModal').style.display = 'none';
+        }
+
+        function toggleAuthMode(mode) {
+            const loginForm = document.getElementById('loginForm');
+            const regForm = document.getElementById('registerForm');
+            const loginTab = document.getElementById('loginTab');
+            const regTab = document.getElementById('registerTab');
+
+            if (mode === 'login') {
+                loginForm.style.display = 'block';
+                regForm.style.display = 'none';
+                loginTab.classList.add('active-tab');
+                regTab.classList.remove('active-tab');
+            } else {
+                loginForm.style.display = 'none';
+                regForm.style.display = 'block';
+                regTab.classList.add('active-tab');
+                loginTab.classList.remove('active-tab');
+            }
+        }
+
+        function processLogin(event) {
+            event.preventDefault();
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+
+            const user = users.find(u => u.email === email && u.password === password);
+            if (user) {
+                currentUser = user;
+                updateAuthUI();
+                closeAuthModal();
+                alert(\`Welcome back, \${currentUser.name}!\`);
+            } else {
+                alert('Invalid email or password.');
+            }
+        }
+
+        function processRegister(event) {
+            event.preventDefault();
+            const name = document.getElementById('regName').value;
+            const email = document.getElementById('regEmail').value;
+            const password = document.getElementById('regPassword').value;
+
+            if (users.some(u => u.email === email)) {
+                return alert('An account with this email already exists.');
+            }
+
+            const newUser = { name, email, password };
+            users.push(newUser);
+            currentUser = newUser;
+            updateAuthUI();
+            closeAuthModal();
+            alert(\`Account created successfully! Welcome, \${name}.\`);
+        }
+
+        function logoutUser() {
+            currentUser = null;
+            updateAuthUI();
+            switchPage('shop');
+            alert('Logged out successfully.');
+        }
+
+        function updateAuthUI() {
+            const navText = document.getElementById('accountNavText');
+            if (currentUser) {
+                navText.innerText = currentUser.name.split(' ')[0];
+                document.getElementById('profileName').innerText = currentUser.name;
+                document.getElementById('profileEmail').innerText = currentUser.email;
+
+                // Pre-fill checkout details
+                document.getElementById('fullName').value = currentUser.name;
+                document.getElementById('contactEmail').value = currentUser.email;
+            } else {
+                navText.innerText = 'Sign In';
+            }
+            renderOrders();
+        }
+
+        function renderProducts(items) {
+            const grid = document.getElementById('productGrid');
+            if (items.length === 0) {
+                grid.innerHTML = \`<p style="grid-column: 1/-1; text-align: center; color: #888; font-family: sans-serif;">No fragrances match your search.</p>\`;
+                return;
+            }
+
+            grid.innerHTML = items.map(product => \`
+                <div class="product-card">
+                    <div class="product-image-wrap">
+                        <img src="\${product.image}" alt="\${product.name}">
+                    </div>
+                    <div class="product-category">\${product.category}</div>
+                    <div class="product-title">\${product.name}</div>
+                    <div class="product-notes">\${product.notes}</div>
+                    <div class="product-price">₱\${product.price.toLocaleString('en-PH')}</div>
+                    <div class="card-actions">
+                        <button class="btn-primary" onclick="addToCart(\${product.id})">Add to Bag</button>
+                    </div>
+                </div>
+            \`).join('');
+        }
+
+        function setCategory(category, button) {
+            activeCategory = category;
+            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+            filterCatalog();
+        }
+
+        function filterCatalog() {
+            const search = document.getElementById('searchInput').value.toLowerCase();
+            const filtered = products.filter(p => {
+                const matchesCategory = (activeCategory === 'All' || p.category === activeCategory);
+                const matchesSearch = p.name.toLowerCase().includes(search) || p.notes.toLowerCase().includes(search);
+                return matchesCategory && matchesSearch;
+            });
+            renderProducts(filtered);
+        }
+
+        function addToCart(productId) {
+            const product = products.find(p => p.id === productId);
+            cart.push(product);
+            updateCart();
+            toggleCart();
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            updateCart();
+        }
+
+        function updateCart() {
+            document.getElementById('cartCount').innerText = cart.length;
+            const container = document.getElementById('cartItems');
+
+            if (cart.length === 0) {
+                container.innerHTML = \`<p style="text-align: center; color: #888; margin-top: 30px;">Your shopping bag is empty.</p>\`;
+            } else {
+                container.innerHTML = cart.map((item, idx) => \`
+                    <div class="cart-item">
+                        <div>
+                            <strong>\${item.name}</strong><br>
+                            <small style="color: #666;">50ml / Eau de Parfum</small>
+                        </div>
+                        <div>
+                            <span>₱\${item.price.toLocaleString('en-PH')}</span>
+                            <span style="cursor: pointer; margin-left: 10px; color: #c00;" onclick="removeFromCart(\${idx})">&times;</span>
+                        </div>
+                    </div>
+                \`).join('');
+            }
+
+            const total = cart.reduce((sum, item) => sum + item.price, 0);
+            document.getElementById('cartTotal').innerText = total.toLocaleString('en-PH');
+            document.getElementById('checkoutTotal').innerText = total.toLocaleString('en-PH');
+        }
+
+        function toggleCart() {
+            const modal = document.getElementById('cartModal');
+            modal.style.display = modal.style.display === 'flex' ? 'none' : 'flex';
+        }
+
+        /* Payment & Checkout Modal Functions */
+        function openCheckoutModal() {
+            if(cart.length === 0) return alert("Your bag is empty!");
+            toggleCart();
+            document.getElementById('checkoutModal').style.display = 'flex';
+        }
+
+        function closeCheckoutModal() {
+            document.getElementById('checkoutModal').style.display = 'none';
+        }
+
+        function togglePaymentFields(type) {
+            document.getElementById('ewalletFields').style.display = type === 'e-wallet' ? 'block' : 'none';
+            document.getElementById('cardFields').style.display = type === 'card' ? 'block' : 'none';
+            document.getElementById('codFields').style.display = type === 'cod' ? 'block' : 'none';
+        }
+
+        function processPayment(event) {
+            event.preventDefault();
+            const name = document.getElementById('fullName').value;
+            const email = document.getElementById('contactEmail').value;
+            const selectedMethod = document.querySelector('input[name="paymentMethod"]:checked').value;
+            const total = cart.reduce((sum, item) => sum + item.price, 0);
+
+            // Create new order record linked to current user
+            const newOrder = {
+                id: \`AUR-\${Math.floor(1000 + Math.random() * 9000)}\`,
+                userEmail: currentUser ? currentUser.email : email,
+                date: new Date().toISOString().split('T')[0],
+                customer: name,
+                paymentMethod: selectedMethod,
+                status: "Processing",
+                total: total,
+                items: cart.map(item => ({
+                    name: item.name,
+                    size: "50ml",
+                    price: item.price,
+                    qty: 1
+                }))
+            };
+
+            orders.unshift(newOrder);
+            renderOrders();
+
+            alert(\`Thank you, \${name}!\\n\\nYour order (\${newOrder.id}) of ₱\${total.toLocaleString('en-PH')} using \${selectedMethod} has been placed.\`);
+
+            cart = [];
+            updateCart();
+            closeCheckoutModal();
+            document.getElementById('checkoutForm').reset();
+            togglePaymentFields('e-wallet');
+            switchPage('orders');
+        }
+
+        /* Order Management Functions (Removal & Status Updates) */
+        function getStatusClass(status) {
+            switch(status) {
+                case 'Processing': return 'status-processing';
+                case 'Shipped': return 'status-shipped';
+                case 'Delivered': return 'status-delivered';
+                case 'Cancelled': return 'status-cancelled';
+                default: return '';
+            }
+        }
+
+        function updateOrderStatus(orderId, newStatus) {
+            const order = orders.find(o => o.id === orderId);
+            if(order) {
+                order.status = newStatus;
+                renderOrders();
+            }
+        }
+
+        function removeItemFromOrder(orderId, itemIndex) {
+            const order = orders.find(o => o.id === orderId);
+            if (!order) return;
+
+            if (confirm(\`Remove \${order.items[itemIndex].name} from this order?\`)) {
+                // Deduct price from total
+                order.total -= (order.items[itemIndex].price * order.items[itemIndex].qty);
+                // Remove item array entry
+                order.items.splice(itemIndex, 1);
+
+                // If no items remain, cancel/remove the order entirely
+                if (order.items.length === 0) {
+                    orders = orders.filter(o => o.id !== orderId);
+                }
+
+                renderOrders();
+            }
+        }
+
+        function cancelAndRemoveOrder(orderId) {
+            if (confirm("Are you sure you want to cancel and delete this entire order?")) {
+                orders = orders.filter(o => o.id !== orderId);
+                renderOrders();
+            }
+        }
+
+        function renderOrders() {
+            const container = document.getElementById('ordersListContainer');
+
+            // Filter orders for logged in user if available
+            const visibleOrders = currentUser 
+                ? orders.filter(o => o.userEmail === currentUser.email)
+                : orders;
+
+            document.getElementById('ordersNavCount').innerText = visibleOrders.length;
+
+            if (visibleOrders.length === 0) {
+                container.innerHTML = \`<p style="text-align: center; color: #888;">You have no placed orders yet.</p>\`;
+                return;
+            }
+
+            container.innerHTML = visibleOrders.map(order => \`
+                <div class="order-card">
+                    <div class="order-header">
+                        <div>
+                            <strong>Order ID: \${order.id}</strong><br>
+                            <small style="color: #666;">Placed on: \${order.date} | Payment: \${order.paymentMethod}</small>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <span class="status-badge \${getStatusClass(order.status)}">\${order.status}</span>
+                            <select style="padding: 4px; font-size: 0.75rem;" onchange="updateOrderStatus('\${order.id}', this.value)">
+                                <option value="Processing" \${order.status === 'Processing' ? 'selected' : ''}>Processing</option>
+                                <option value="Shipped" \${order.status === 'Shipped' ? 'selected' : ''}>Shipped</option>
+                                <option value="Delivered" \${order.status === 'Delivered' ? 'selected' : ''}>Delivered</option>
+                                <option value="Cancelled" \${order.status === 'Cancelled' ? 'selected' : ''}>Cancelled</option>
+                            </select>
+                            <button class="delete-order-btn" onclick="cancelAndRemoveOrder('\${order.id}')">Cancel Order</button>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 15px;">
+                        <div style="font-size: 0.8rem; text-transform: uppercase; color: #888; margin-bottom: 8px;">Order Items</div>
+                        \${order.items.map((item, idx) => \`
+                            <div class="order-item-row">
+                                <span>\${item.qty}x \${item.name} (\${item.size})</span>
+                                <div>
+                                    <span>₱\${item.price.toLocaleString('en-PH')}</span>
+                                    <span class="remove-item-btn" onclick="removeItemFromOrder('\${order.id}', \${idx})">Remove</span>
+                                </div>
+                            </div>
+                        \`).join('')}
+                    </div>
+
+                    <div style="text-align: right; font-size: 1rem; font-weight: bold; border-top: 1px solid var(--border-color); padding-top: 10px;">
+                        Total: ₱\${order.total.toLocaleString('en-PH')}
+                    </div>
+                </div>
+            \`).join('');
+        }
+
+        renderProducts(products);
+        renderOrders();
+    <\/script>
+</body>
+</html>`
     };
 
     function openModal(projectId) {
@@ -242,7 +1406,7 @@
         project1: "Emergency Dispatch Terminal",
         project2: "Interest Gallery Board",
         project3: "Rest & Go Hotel Booking Platform",
-        project4: "Minesweeper Game"
+        project4: "Aura Parfum Store"
       };
 
       title.innerText = titles[projectId] || "Project Preview";
